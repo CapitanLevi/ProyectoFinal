@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuPrincipal</class>
+ <widget class="QMainWindow" name="MenuPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MenuPrincipal</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>320</y>
+      <width>252</width>
+      <height>177</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="singleplayer">
+       <property name="font">
+        <font>
+         <family>Purisa</family>
+         <pointsize>25</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#singleplayer{
+background-color: transparent;
+color: navy;
+border: none;
+}
+#singleplayer::pressed{
+color: orange;
+border: default;
+}</string>
+       </property>
+       <property name="text">
+        <string>Single player</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="multiplayer">
+       <property name="font">
+        <font>
+         <family>Purisa</family>
+         <pointsize>25</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#multiplayer{
+background-color: transparent;
+color: navy;
+border: none;
+}
+#multiplayer::pressed{
+color: orange;
+border: default;
+}</string>
+       </property>
+       <property name="text">
+        <string>Multiplayer</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="load">
+       <property name="font">
+        <font>
+         <family>Purisa</family>
+         <pointsize>25</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#load{
+background-color: transparent;
+color: navy;
+border: none;
+}
+#load::pressed{
+color: orange;
+border: default;
+}</string>
+       </property>
+       <property name="text">
+        <string>Load</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="about">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>440</y>
+      <width>105</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Purisa</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#about{
+background-color: transparent;
+color: navy;
+border: default;
+}
+#about::pressed{
+color: orange;
+}</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fondo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/images/fondoO.jpg</pixmap>
+    </property>
+   </widget>
+   <zorder>fondo</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>about</zorder>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
