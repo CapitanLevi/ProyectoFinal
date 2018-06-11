@@ -6,27 +6,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1046</width>
-    <height>523</height>
+    <width>1004</width>
+    <height>508</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="bg6">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1046</width>
-     <height>521</height>
+     <width>1000</width>
+     <height>504</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="res.qrc">:/images/bg6.png</pixmap>
+    <pixmap resource="res.qrc">:/gifs/gifs/bg6.gif</pixmap>
    </property>
   </widget>
  </widget>

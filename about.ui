@@ -13,7 +13,10 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="description">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -42,7 +45,9 @@
    </property>
    <property name="font">
     <font>
+     <family>Ubuntu</family>
      <pointsize>12</pointsize>
+     <italic>false</italic>
     </font>
    </property>
    <property name="acceptDrops">
@@ -66,6 +71,12 @@
    <property name="wordWrap">
     <bool>true</bool>
    </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+   <property name="buddy">
+    <cstring></cstring>
+   </property>
   </widget>
   <widget class="QPushButton" name="ok">
    <property name="geometry">
@@ -85,7 +96,7 @@
     <string>Ok</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
      <x>140</x>

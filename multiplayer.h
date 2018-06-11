@@ -1,8 +1,9 @@
 #ifndef MULTIPLAYER_H
 #define MULTIPLAYER_H
 
-#include <QMediaPlayer>
+//#include <QMediaPlayer>
 #include <QDialog>
+#include <QMovie>
 
 namespace Ui {
 class Multiplayer;
@@ -15,9 +16,8 @@ class Multiplayer : public QDialog
 public:
     explicit Multiplayer(QWidget *parent = 0);
     ~Multiplayer();
-
-    QMediaPlayer * musicm;
-
+//    QMediaPlayer * musicm;
+    QMovie *movie;
 private:
     Ui::Multiplayer *ui;
 };

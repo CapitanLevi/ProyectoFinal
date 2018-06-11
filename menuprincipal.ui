@@ -6,103 +6,169 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>540</height>
+    <width>1007</width>
+    <height>587</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MenuPrincipal</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QLabel" name="fondo">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>320</y>
-      <width>252</width>
-      <height>177</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>549</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QPushButton" name="singleplayer">
-       <property name="font">
-        <font>
-         <family>Purisa</family>
-         <pointsize>25</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">#singleplayer{
-background-color: transparent;
-color: navy;
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="res.qrc">:/images/images/fondoPaisaje.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>380</y>
+      <width>282</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>27</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#singleplayer{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0))transparent;
+color: rgb(0, 199, 55);
+border: default;
+}
+#singleplayer::hover{
+color: rgb(126, 255, 0);
 border: none;
 }
 #singleplayer::pressed{
 color: orange;
 border: default;
 }</string>
-       </property>
-       <property name="text">
-        <string>Single player</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="multiplayer">
-       <property name="font">
-        <font>
-         <family>Purisa</family>
-         <pointsize>25</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">#multiplayer{
-background-color: transparent;
-color: navy;
+    </property>
+    <property name="text">
+     <string>Angry Crazy Balls</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="singleplayer">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>180</y>
+      <width>229</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Purisa</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#singleplayer{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0))transparent;
+color: rgb(0, 199, 55);
+border: default;
+}
+#singleplayer::hover{
+color: rgb(126, 255, 0);
 border: none;
+}
+#singleplayer::pressed{
+color: orange;
+border: default;
+}</string>
+    </property>
+    <property name="text">
+     <string>Single player</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="multiplayer">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>260</y>
+      <width>185</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Purisa</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#multiplayer{
+background-color: transparent;
+color:  rgb(0, 199, 55);
+border: none;
+}
+#multiplayer::hover{
+color: rgb(126, 255, 0);
 }
 #multiplayer::pressed{
 color: orange;
 border: default;
 }</string>
-       </property>
-       <property name="text">
-        <string>Multiplayer</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="load">
-       <property name="font">
-        <font>
-         <family>Purisa</family>
-         <pointsize>25</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">#load{
+    </property>
+    <property name="text">
+     <string>Multiplayer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="load">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>350</y>
+      <width>87</width>
+      <height>54</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Purisa</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#load{
 background-color: transparent;
-color: navy;
+color:  rgb(0, 199, 55);
 border: none;
+}
+#load::hover{
+color: rgb(126, 255, 0);
 }
 #load::pressed{
 color: orange;
 border: default;
-}</string>
-       </property>
-       <property name="text">
-        <string>Load</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="about">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>440</y>
+      <x>760</x>
+      <y>460</y>
       <width>105</width>
       <height>54</height>
      </rect>
@@ -116,8 +182,11 @@ border: default;
     <property name="styleSheet">
      <string notr="true">#about{
 background-color: transparent;
-color: navy;
+color:  rgb(0, 199, 55);
 border: default;
+}
+#about::hover{
+color: rgb(126, 255, 0);
 }
 #about::pressed{
 color: orange;
@@ -127,25 +196,13 @@ color: orange;
      <string>About</string>
     </property>
    </widget>
-   <widget class="QLabel" name="fondo">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>800</width>
-      <height>500</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="res.qrc">:/images/fondoO.jpg</pixmap>
-    </property>
-   </widget>
    <zorder>fondo</zorder>
    <zorder>layoutWidget</zorder>
    <zorder>about</zorder>
+   <zorder>load</zorder>
+   <zorder>singleplayer</zorder>
+   <zorder>multiplayer</zorder>
+   <zorder>title</zorder>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1065</width>
-    <height>542</height>
+    <width>1001</width>
+    <height>529</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,17 +16,17 @@
   <widget class="QLabel" name="bg1">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>1047</width>
-     <height>524</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>526</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="res.qrc">:/images/bg1.png</pixmap>
+    <pixmap resource="res.qrc">:/gifs/gifs/bg1.gif</pixmap>
    </property>
   </widget>
  </widget>

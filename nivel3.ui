@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1049</width>
-    <height>529</height>
+    <width>1000</width>
+    <height>503</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,15 +18,15 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1046</width>
-     <height>525</height>
+     <width>1000</width>
+     <height>500</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="res.qrc">:/images/bg3.png</pixmap>
+    <pixmap resource="res.qrc">:/gifs/gifs/bg3.gif</pixmap>
    </property>
   </widget>
  </widget>

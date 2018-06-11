@@ -22,63 +22,57 @@ ListaNiveles::~ListaNiveles()
 }
 
 
-void ListaNiveles::on_nivel_clicked()
+void ListaNiveles::on_nivel1_clicked()
 {
-    w->music->stop();
-    w->MenuPrincipal::~MenuPrincipal();
+//    w->MenuPrincipal::~MenuPrincipal();
     Nivel1 nivel1;
     nivel1.setModal(true);
     nivel1.exec();
 }
 
-void ListaNiveles::on_nivel_2_clicked()
+void ListaNiveles::on_nivel2_clicked()
 {
-    w->music->stop();
-    w->MenuPrincipal::~MenuPrincipal();
+//    w->MenuPrincipal::~MenuPrincipal();
     Nivel2 nivel2;
     nivel2.setModal(true);
     nivel2.exec();
 }
 
-void ListaNiveles::on_nivel_3_clicked()
+void ListaNiveles::on_nivel3_clicked()
 {
-    w->music->stop();
-    w->MenuPrincipal::~MenuPrincipal();
+//    w->MenuPrincipal::~MenuPrincipal();
     Nivel3 nivel3;
     nivel3.setModal(true);
     nivel3.exec();
 }
 
-void ListaNiveles::on_nivel_4_clicked()
+void ListaNiveles::on_nivel4_clicked()
 {
-    w->music->stop();
-    w->MenuPrincipal::~MenuPrincipal();
+//    w->MenuPrincipal::~MenuPrincipal();
     Nivel4 nivel4;
     nivel4.setModal(true);
     nivel4.exec();
 }
 
-void ListaNiveles::on_nivel_5_clicked()
+void ListaNiveles::on_nivel5_clicked()
 {
-    w->music->stop();
-    w->MenuPrincipal::~MenuPrincipal();
+//    w->MenuPrincipal::~MenuPrincipal();
     Nivel5 nivel5;
     nivel5.setModal(true);
     nivel5.exec();
 }
 
-void ListaNiveles::on_nivel_6_clicked()
+void ListaNiveles::on_nivel6_clicked()
 {
-    w->music->stop();
-    w->MenuPrincipal::~MenuPrincipal();
+//    w->MenuPrincipal::~MenuPrincipal();
     Nivel6 nivel6;
     nivel6.setModal(true);
     nivel6.exec();
 }
 
-void ListaNiveles::on_nivel_7_clicked()
+void ListaNiveles::on_quit_clicked()
 {
     this->close();
-    w = new MenuPrincipal();
-    w->show();
+//    w = new MenuPrincipal();
+//    w->show();
 }

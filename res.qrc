@@ -1,19 +1,23 @@
 <RCC>
-    <qresource prefix="/images">
-        <file>fondoO.jpg</file>
-        <file>bg2.png</file>
-        <file>bg1.png</file>
-        <file>bg3.png</file>
-        <file>bg4.png</file>
-        <file>bg5.png</file>
-        <file>bg6.png</file>
-        <file>bgm.jpg</file>
-    </qresource>
-    <qresource prefix="/audio">
-        <file>Never Gonna Give You Up 8 Bit Remix.mp3</file>
-        <file>Good Starts.mp3</file>
-    </qresource>
     <qresource prefix="/gifs">
-        <file>cloudsmoving.gif</file>
+        <file>gifs/bg1.gif</file>
+        <file>gifs/bg2.gif</file>
+        <file>gifs/bg3.gif</file>
+        <file>gifs/bg4.gif</file>
+        <file>gifs/bg5.gif</file>
+        <file>gifs/bg6.gif</file>
+        <file>gifs/bgm.gif</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/fondoAstr.jpg</file>
+        <file>images/fondoPaisaje.jpg</file>
+    </qresource>
+    <qresource prefix="/audios">
+        <file>audios/Good Starts.mp3</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>fonts/better-together.ttf</file>
+        <file>fonts/Cassandra Personal Use.ttf</file>
+        <file>fonts/Sweet Sensations Personal Use.ttf</file>
     </qresource>
 </RCC>

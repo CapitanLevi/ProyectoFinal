@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1002</width>
-    <height>569</height>
+    <height>529</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,14 +19,14 @@
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>567</height>
+     <height>526</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="res.qrc">:/images/bgm.jpg</pixmap>
+    <pixmap resource="res.qrc">:/gifs/gifs/bgm.gif</pixmap>
    </property>
   </widget>
  </widget>

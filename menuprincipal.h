@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QMediaPlayer>
 
+
 namespace Ui {
 class MenuPrincipal;
 }
@@ -16,16 +17,16 @@ public:
     ~MenuPrincipal();
 
     QMediaPlayer * music;
+    int tamletra=25;
 
 private slots:
     void on_singleplayer_clicked();
-
     void on_about_clicked();
-
     void on_multiplayer_clicked();
 
 private:
     Ui::MenuPrincipal *ui;
+
 };
 
 #endif // MENUPRINCIPAL_H

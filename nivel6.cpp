@@ -6,6 +6,9 @@ Nivel6::Nivel6(QWidget *parent) :
     ui(new Ui::Nivel6)
 {
     ui->setupUi(this);
+    movie = new QMovie(":/gifs/gifs/bg6.gif");
+    ui->bg6->setMovie(movie);
+    movie->start();
 }
 
 Nivel6::~Nivel6()

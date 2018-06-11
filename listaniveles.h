@@ -23,19 +23,13 @@ public:
     ~ListaNiveles();
 
 private slots:
-    void on_nivel_clicked();
-
-    void on_nivel_2_clicked();
-
-    void on_nivel_3_clicked();
-
-    void on_nivel_4_clicked();
-
-    void on_nivel_5_clicked();
-
-    void on_nivel_6_clicked();
-
-    void on_nivel_7_clicked();
+    void on_nivel1_clicked();
+    void on_nivel2_clicked();
+    void on_nivel3_clicked();
+    void on_nivel4_clicked();
+    void on_nivel5_clicked();
+    void on_nivel6_clicked();
+    void on_quit_clicked();
 
 private:
     Ui::ListaNiveles *ui;

@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -31,7 +31,7 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Elija nivel&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel">
+  <widget class="QPushButton" name="nivel1">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -44,7 +44,7 @@
     <string>Nivel 1</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel_2">
+  <widget class="QPushButton" name="nivel2">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -57,7 +57,7 @@
     <string>Nivel 2</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel_3">
+  <widget class="QPushButton" name="nivel3">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -70,7 +70,7 @@
     <string>Nivel 3</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel_4">
+  <widget class="QPushButton" name="nivel4">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -83,7 +83,7 @@
     <string>Nivel 4</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel_5">
+  <widget class="QPushButton" name="nivel5">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -96,7 +96,7 @@
     <string>Nivel 5</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel_6">
+  <widget class="QPushButton" name="nivel6">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -109,7 +109,7 @@
     <string>Nivel 6</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="nivel_7">
+  <widget class="QPushButton" name="quit">
    <property name="geometry">
     <rect>
      <x>70</x>

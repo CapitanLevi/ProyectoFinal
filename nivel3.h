@@ -2,6 +2,7 @@
 #define NIVEL3_H
 
 #include <QDialog>
+#include <QMovie>
 
 namespace Ui {
 class Nivel3;
@@ -14,7 +15,7 @@ class Nivel3 : public QDialog
 public:
     explicit Nivel3(QWidget *parent = 0);
     ~Nivel3();
-
+    QMovie *movie;
 private:
     Ui::Nivel3 *ui;
 };
