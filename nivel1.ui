@@ -29,39 +29,34 @@
     <pixmap resource="res.qrc">:/gifs/gifs/bg1.gif</pixmap>
    </property>
   </widget>
-  <widget class="QPushButton" name="win1">
+  <widget class="QGraphicsView" name="graphicsView">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>30</y>
-     <width>89</width>
-     <height>25</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>531</height>
     </rect>
    </property>
-   <property name="text">
-    <string>You win</string>
+   <property name="styleSheet">
+    <string notr="true">#graphicsView{
+background-color: transparent
+;
+}</string>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="0">
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </brush>
    </property>
   </widget>
  </widget>
  <resources>
   <include location="res.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>win1</sender>
-   <signal>destroyed()</signal>
-   <receiver>Nivel1</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>424</x>
-     <y>42</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>500</x>
-     <y>264</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

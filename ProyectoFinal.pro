@@ -35,6 +35,10 @@ SOURCES += \
     multiplayer.cpp \
     nivel5.cpp \
     listaniveles.cpp \
+    Backend/esferagraf.cpp \
+    Backend/esferasim.cpp \
+    Backend/esferasimmovcir.cpp \
+    Backend/esferasimmovcirgraf.cpp \
     win1.cpp
 
 HEADERS += \
@@ -48,6 +52,10 @@ HEADERS += \
     multiplayer.h \
     nivel5.h \
     listaniveles.h \
+    Backend/esferagraf.h \
+    Backend/esferasim.h \
+    Backend/esferasimmovcirgraf.h \
+    Backend/esferasimmovcir.h \
     win1.h
 
 FORMS += \
