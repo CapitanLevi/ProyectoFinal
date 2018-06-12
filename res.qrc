@@ -7,10 +7,7 @@
         <file>gifs/bg5.gif</file>
         <file>gifs/bg6.gif</file>
         <file>gifs/bgm.gif</file>
-    </qresource>
-    <qresource prefix="/images">
-        <file>images/fondoAstr.jpg</file>
-        <file>images/fondoPaisaje.jpg</file>
+        <file>gifs/menu.gif</file>
     </qresource>
     <qresource prefix="/audios">
         <file>audios/Good Starts.mp3</file>
@@ -19,5 +16,7 @@
         <file>fonts/better-together.ttf</file>
         <file>fonts/Cassandra Personal Use.ttf</file>
         <file>fonts/Sweet Sensations Personal Use.ttf</file>
+        <file>fonts/Audiowide-Regular.ttf</file>
+        <file>fonts/Monofett.ttf</file>
     </qresource>
 </RCC>

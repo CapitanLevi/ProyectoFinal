@@ -17,7 +17,7 @@ public:
     explicit Multiplayer(QWidget *parent = 0);
     ~Multiplayer();
 //    QMediaPlayer * musicm;
-    QMovie *movie;
+    QMovie *moviem;
 private:
     Ui::Multiplayer *ui;
 };

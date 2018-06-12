@@ -11,12 +11,10 @@ Multiplayer::Multiplayer(QWidget *parent) :
 //    w->music->stop();
 //    w->MenuPrincipal::~MenuPrincipal();
     ui->setupUi(this);
-//    musicm = new QMediaPlayer();
-//    musicm->setMedia(QUrl("qrc:/audio/Dust in the wind.mp3"));
-//    musicm->play();
-    movie = new QMovie(":/gifs/gifs/bgm.gif");
-    ui->bgm->setMovie(movie);
-    movie->start();
+    // set background gif
+    moviem = new QMovie(":/gifs/gifs/bgm.gif");
+    ui->bgm->setMovie(moviem);
+    moviem->start();
 }
 
 Multiplayer::~Multiplayer()

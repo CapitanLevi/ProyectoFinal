@@ -15,17 +15,23 @@ MenuPrincipal::MenuPrincipal(QWidget *parent) :
     music = new QMediaPlayer();
     music->setMedia(QUrl("qrc:/audios/audios/Good Starts.mp3"));
     music->play();
+    // set background gif
+    movie = new QMovie(":/gifs/gifs/menu.gif");
+    ui->fondo->setMovie(movie);
+    movie->start();
     // set typography
-    //QFontDatabase::addApplicationFont(":/fonts/fonts/Cassandra Personal Use.ttf");
-    QFontDatabase::addApplicationFont(":/fonts/fonts/Sweet Sensations Personal Use.ttf");
-    //QFont Cassi = QFont("Cassandra Personal Use",tamletra,1);
-    QFont Sweet = QFont("Sweet Sensations Personal Use",tamletra,1);
-
-    ui->singleplayer->setFont(Sweet);
-    ui->multiplayer->setFont(Sweet);
-    ui->about->setFont(Sweet);
-    ui->load->setFont(Sweet);
-    ui->title->setFont(Sweet);
+//    QFontDatabase::addApplicationFont(":/fonts/fonts/Cassandra Personal Use.ttf");
+//    QFontDatabase::addApplicationFont(":/fonts/fonts/Sweet Sensations Personal Use.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/fonts/Audiowide-Regular.ttf");
+    QFontDatabase::addApplicationFont(":/fonts/fonts/Monofett.ttf");
+    QFont audiowide = QFont("Audiowide",tamletra,1);
+    QFont monofett = QFont("Monofett",tamletra+5,1);
+    ui->singleplayer->setFont(audiowide);
+    ui->multiplayer->setFont(audiowide);
+    ui->about->setFont(audiowide);
+    ui->load->setFont(audiowide);
+    ui->quit->setFont(audiowide);
+    ui->title->setFont(monofett);
 }
 
 MenuPrincipal::~MenuPrincipal()
@@ -56,3 +62,8 @@ void MenuPrincipal::on_multiplayer_clicked()
     m.exec();
 }
 
+
+void MenuPrincipal::on_quit_clicked()
+{
+    this->close();
+}

@@ -2,7 +2,7 @@
 #define MENUPRINCIPAL_H
 #include <QMainWindow>
 #include <QMediaPlayer>
-
+#include <QMovie>
 
 namespace Ui {
 class MenuPrincipal;
@@ -15,7 +15,7 @@ class MenuPrincipal : public QMainWindow
 public:
     explicit MenuPrincipal(QWidget *parent = 0);
     ~MenuPrincipal();
-
+    QMovie *movie;
     QMediaPlayer * music;
     int tamletra=25;
 
@@ -23,6 +23,7 @@ private slots:
     void on_singleplayer_clicked();
     void on_about_clicked();
     void on_multiplayer_clicked();
+    void on_quit_clicked();
 
 private:
     Ui::MenuPrincipal *ui;
