@@ -29,9 +29,39 @@
     <pixmap resource="res.qrc">:/gifs/gifs/bg1.gif</pixmap>
    </property>
   </widget>
+  <widget class="QPushButton" name="win1">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>30</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>You win</string>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="res.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>win1</sender>
+   <signal>destroyed()</signal>
+   <receiver>Nivel1</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>424</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>500</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

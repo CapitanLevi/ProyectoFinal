@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QMediaPlayer>
 #include <QMovie>
+#include "about.h"
 
 namespace Ui {
 class MenuPrincipal;
@@ -18,6 +19,7 @@ public:
     QMovie *movie;
     QMediaPlayer * music;
     int tamletra=25;
+    About *about;
 
 private slots:
     void on_singleplayer_clicked();

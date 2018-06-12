@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#about{
+color: rgb(0, 0, 0)
+;
+}</string>
+  </property>
   <widget class="QLabel" name="description">
    <property name="enabled">
     <bool>true</bool>

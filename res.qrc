@@ -13,10 +13,10 @@
         <file>audios/Good Starts.mp3</file>
     </qresource>
     <qresource prefix="/fonts">
-        <file>fonts/better-together.ttf</file>
         <file>fonts/Cassandra Personal Use.ttf</file>
         <file>fonts/Sweet Sensations Personal Use.ttf</file>
         <file>fonts/Audiowide-Regular.ttf</file>
         <file>fonts/Monofett.ttf</file>
+        <file>fonts/AirbagFree-Regular.ttf</file>
     </qresource>
 </RCC>

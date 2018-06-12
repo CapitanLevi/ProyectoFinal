@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include "menuprincipal.h"
-//#include "nivel1.h"
+#include "nivel1.h"2
 //#include "nivel2.h"
 //#include "nivel3.h"
 //#include "nivel4.h"
@@ -22,6 +22,13 @@ public:
     explicit ListaNiveles(QWidget *parent = 0);
     ~ListaNiveles();
 
+    Nivel1 nivel1;
+//    Nivel1 *nivel1;
+//    Nivel2 *nivel2;
+//    Nivel3 *nivel3;
+//    Nivel4 *nivel4;
+//    Nivel5 *nivel5;
+//    Nivel6 *nivel6;
 private slots:
     void on_nivel1_clicked();
     void on_nivel2_clicked();
@@ -34,12 +41,7 @@ private slots:
 private:
     Ui::ListaNiveles *ui;
     MenuPrincipal *m;
-//    Nivel1 *nivel1;
-//    Nivel2 *nivel2;
-//    Nivel3 *nivel3;
-//    Nivel4 *nivel4;
-//    Nivel5 *nivel5;
-//    Nivel6 *nivel6;
+
 };
 
 #endif // LISTANIVELES_H

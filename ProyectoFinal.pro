@@ -34,7 +34,8 @@ SOURCES += \
     nivel6.cpp \
     multiplayer.cpp \
     nivel5.cpp \
-    listaniveles.cpp
+    listaniveles.cpp \
+    win1.cpp
 
 HEADERS += \
         menuprincipal.h \
@@ -46,7 +47,8 @@ HEADERS += \
     nivel6.h \
     multiplayer.h \
     nivel5.h \
-    listaniveles.h
+    listaniveles.h \
+    win1.h
 
 FORMS += \
         menuprincipal.ui \
@@ -58,7 +60,8 @@ FORMS += \
     nivel6.ui \
     multiplayer.ui \
     nivel5.ui \
-    listaniveles.ui
+    listaniveles.ui \
+    win1.ui
 
 RESOURCES += \
     res.qrc

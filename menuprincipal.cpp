@@ -1,6 +1,5 @@
 #include "menuprincipal.h"
 #include "ui_menuprincipal.h"
-#include "about.h"
 #include "listaniveles.h"
 #include "multiplayer.h"
 #include <QFont>
@@ -49,9 +48,9 @@ void MenuPrincipal::on_singleplayer_clicked()
 
 void MenuPrincipal::on_about_clicked()
 {
-    About about;
-    about.setModal(true);
-    about.exec();
+    about = new About();
+    about->setModal(true);
+    about->exec();
 }
 
 void MenuPrincipal::on_multiplayer_clicked()
