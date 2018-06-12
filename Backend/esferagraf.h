@@ -15,6 +15,7 @@ public:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget); //define como se pintara el objeto
     void setEscala(float s);
     void actualizar(float dt, float v_lim);
+    void actualizar2(float dt, float v_lim);
     EsferaSim* getEsf();
 private:
     EsferaSim* esf;

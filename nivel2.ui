@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1005</width>
-    <height>492</height>
+    <height>536</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>40</y>
      <width>1000</width>
      <height>490</height>
     </rect>
@@ -27,6 +27,44 @@
    </property>
    <property name="pixmap">
     <pixmap resource="res.qrc">:/gifs/gifs/bg2.gif</pixmap>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#graphicsView{
+background-color: transparent
+;
+}</string>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="0">
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>100</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nivel 2</string>
    </property>
   </widget>
  </widget>

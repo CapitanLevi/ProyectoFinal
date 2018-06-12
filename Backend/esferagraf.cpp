@@ -36,6 +36,12 @@ void EsferaGraf::actualizar(float dt, float v_lim)
     setPos(esf->getX()*escala,(v_lim-esf->getY())*escala);
 }
 
+void EsferaGraf::actualizar2(float dt, float v_lim)
+{
+    esf->actualizar2(dt);
+    setPos(esf->getX()*escala,(v_lim-esf->getY())*escala);
+}
+
 EsferaSim *EsferaGraf::getEsf()
 {
     return esf;

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
-    <height>503</height>
+    <width>1007</width>
+    <height>535</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>30</y>
      <width>1000</width>
      <height>500</height>
     </rect>
@@ -29,6 +29,47 @@
     <pixmap resource="res.qrc">:/gifs/gifs/bg3.gif</pixmap>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#graphicsView{
+background-color: transparent
+;
+}</string>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="0">
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>70</y>
+     <width>161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nivel 3</string>
+   </property>
+  </widget>
+  <zorder>bg3</zorder>
+  <zorder>label</zorder>
+  <zorder>graphicsView</zorder>
  </widget>
  <resources>
   <include location="res.qrc"/>

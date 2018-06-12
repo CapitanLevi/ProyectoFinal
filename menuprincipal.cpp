@@ -2,6 +2,7 @@
 #include "ui_menuprincipal.h"
 #include "listaniveles.h"
 #include "multiplayer.h"
+#include "load.h"
 #include <QFont>
 #include <QFontDatabase>
 
@@ -23,8 +24,8 @@ MenuPrincipal::MenuPrincipal(QWidget *parent) :
 //    QFontDatabase::addApplicationFont(":/fonts/fonts/Sweet Sensations Personal Use.ttf");
     QFontDatabase::addApplicationFont(":/fonts/fonts/Audiowide-Regular.ttf");
     QFontDatabase::addApplicationFont(":/fonts/fonts/Monofett.ttf");
-    QFont audiowide = QFont("Audiowide",tamletra,1);
     QFont monofett = QFont("Monofett",tamletra+5,1);
+    QFont audiowide = QFont("Audiowide",tamletra,1);
     ui->singleplayer->setFont(audiowide);
     ui->multiplayer->setFont(audiowide);
     ui->about->setFont(audiowide);
@@ -65,4 +66,11 @@ void MenuPrincipal::on_multiplayer_clicked()
 void MenuPrincipal::on_quit_clicked()
 {
     this->close();
+}
+
+void MenuPrincipal::on_load_clicked()
+{
+    Load load;
+    load.setModal(true);
+    load.exec();
 }

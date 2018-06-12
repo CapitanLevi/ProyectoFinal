@@ -19,4 +19,8 @@
         <file>fonts/Monofett.ttf</file>
         <file>fonts/AirbagFree-Regular.ttf</file>
     </qresource>
+    <qresource prefix="/images">
+        <file>images/congratulations.png</file>
+        <file>images/obstaculo.jpg</file>
+    </qresource>
 </RCC>

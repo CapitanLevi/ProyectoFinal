@@ -29,6 +29,44 @@
     <pixmap resource="res.qrc">:/gifs/gifs/bgm.gif</pixmap>
    </property>
   </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#graphicsView{
+background-color: transparent
+;
+}</string>
+   </property>
+   <property name="backgroundBrush">
+    <brush brushstyle="SolidPattern">
+     <color alpha="0">
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>60</y>
+     <width>241</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Multiplayer</string>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="res.qrc"/>

@@ -35,11 +35,15 @@ SOURCES += \
     multiplayer.cpp \
     nivel5.cpp \
     listaniveles.cpp \
-    Backend/esferagraf.cpp \
-    Backend/esferasim.cpp \
     Backend/esferasimmovcir.cpp \
     Backend/esferasimmovcirgraf.cpp \
-    win1.cpp
+    win1.cpp \
+    load.cpp \
+    Backend/esferagraf.cpp \
+    Backend/esferasim.cpp \
+    lose1.cpp \
+    ganadorm.cpp \
+    ganadorm2.cpp
 
 HEADERS += \
         menuprincipal.h \
@@ -52,11 +56,15 @@ HEADERS += \
     multiplayer.h \
     nivel5.h \
     listaniveles.h \
-    Backend/esferagraf.h \
-    Backend/esferasim.h \
     Backend/esferasimmovcirgraf.h \
     Backend/esferasimmovcir.h \
-    win1.h
+    win1.h \
+    load.h \
+    Backend/esferagraf.h \
+    Backend/esferasim.h \
+    lose1.h \
+    ganadorm.h \
+    ganadorm2.h
 
 FORMS += \
         menuprincipal.ui \
@@ -69,7 +77,11 @@ FORMS += \
     multiplayer.ui \
     nivel5.ui \
     listaniveles.ui \
-    win1.ui
+    win1.ui \
+    load.ui \
+    lose1.ui \
+    ganadorm.ui \
+    ganadorm2.ui
 
 RESOURCES += \
     res.qrc

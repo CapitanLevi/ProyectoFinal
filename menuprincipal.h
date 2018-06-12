@@ -27,6 +27,8 @@ private slots:
     void on_multiplayer_clicked();
     void on_quit_clicked();
 
+    void on_load_clicked();
+
 private:
     Ui::MenuPrincipal *ui;
 

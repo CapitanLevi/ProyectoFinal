@@ -35,6 +35,11 @@ public:
     QMovie *movie;
     int tamletra = 25;
     Win1 *win1 = new Win1();
+
+    int bandera=0;
+    int numero_obstaculos=4;
+    int contador=0;
+    int banderacontador=0;
 private slots:
     void cerrar();
     // backend

@@ -17,6 +17,22 @@ void EsferaSim::setVel(float x, float y)
     vy=y;
 }
 
+void EsferaSim::actualizar2(float dt)
+{
+     float angulo=0,vt=0;          //ESTO JODE EL PROGRAMA. NO SÉ PORQUE
+     angulo=atan2(vy,vx);
+     vt=sqrt(pow(vx,2)+pow(vy,2));
+     ax=((-vt*pow(radio,2))/masa)*cos(angulo)/100;
+     qDebug()<<"ax es: "<<ax<<endl;
+     ay=((-vt*pow(radio,2))/masa)*sin(angulo)/100-(10);
+     qDebug()<<"ay es: "<<ay<<endl;
+     vx=vx+ax*dt;
+     vy=vy+ay*dt;
+     px+=vx*dt;
+     py+=vy*dt;
+
+}
+
 void EsferaSim::setPoint(float x, float y)
 {
     px=x;
@@ -38,13 +54,18 @@ void EsferaSim::actualizar(float dt)
 
 void EsferaSim::aceleracion(float dt)
 {
-    ax=0;
+    //ax=0;
     ay=-10;
-//    float angulo=0,vt=0;          ESTO JODE EL PROGRAMA. NO SÉ PORQUE
-//    angulo=atan2(vy,vx);
-//    vt=sqrt(pow(vx,2)+pow(vy,2));
-//    ax=((-pow(vt,2)*pow(radio,2))/masa)*cos(angulo);
-//    ay=((-pow(vt,2)*pow(radio,2))/masa)*sin(angulo)*(10);
+   // float angulo=0,vt=0;          //ESTO JODE EL PROGRAMA. NO SÉ PORQUE
+   // angulo=atan2(vy,vx);
+    //vt=sqrt(pow(vx,2)+pow(vy,2));
+    //ax=((-pow(vt,2)*pow(radio,2))/masa)*cos(angulo);
+    //ay=((-pow(vt,2)*pow(radio,2))/masa)*sin(angulo)-(10);
+}
+
+void EsferaSim::setK(float _K)
+{
+    k=_K;
 }
 
 float EsferaSim::getX() const

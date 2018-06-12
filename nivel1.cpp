@@ -5,10 +5,7 @@
 
 // *** back end ***
 #include <QDebug>
-int bandera=0;
-int numero_obstaculos=4;
-int contador=0;
-int banderacontador=0;
+
 // *** back end ***
 
 Nivel1::Nivel1(QWidget *parent) :
@@ -27,6 +24,8 @@ Nivel1::Nivel1(QWidget *parent) :
     movie->start();
 
     // set title's typography
+    QFont audiowide = QFont("Audiowide",tamletra,1);
+    ui->label->setFont(audiowide);
 //    QFontDatabase::addApplicationFont(":/fonts/fonts/AirbagFree-Regular.ttf");
 //    QFont titlefont = QFont("AirbagFree",tamletra,1);
 //    ui->title->setFont(titlefont);
@@ -46,32 +45,24 @@ Nivel1::Nivel1(QWidget *parent) :
     scene->setSceneRect(0,0,h_limit,v_limit);     //asigna el rectangulo que encierra la scene, determinado por h_limit y v_limit
 
     ui->graphicsView->setScene(scene);
-         //   qDebug()<<ui->graphicsView->size();
-    //ui->centralWidget->adjustSize();
-      //      qDebug()<<ui->centralWidget->size();
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
-//   this->adjustSize();//
-
-
-       // qDebug()<<this->size();
     scene->addRect(scene->sceneRect());
 
 
     //rectangle=scene->addRect(-100,-100,0.5,100,blackpen,blueBrush);
     //rectangle=scene->addRect(500,50,0,100,QPen(Qt::black),QBrush(Qt::red));
-
+    // Obstáculos
     rectangles.append(scene->addRect(200,50,0,200,QPen(Qt::black),QBrush(Qt::red)));
     rectangles.append(scene->addRect(800,50,0,200,QPen(Qt::black),QBrush(Qt::red)));
     rectangles.append(scene->addRect(300,300,0,200,QPen(Qt::black),QBrush(Qt::red)));
     rectangles.append(scene->addRect(700,300,0,200,QPen(Qt::black),QBrush(Qt::red)));
-
-
 
     timer->stop();                              //para el timer
 
 
 
     //---------------------------------------------------------------//
+    // Variables físicas para el MCU
     timer->start(1000*dt);
     srand(time(NULL));
     float px=0,py=0,radio=0,vx=0,vy=0,masa=0;
@@ -99,15 +90,6 @@ Nivel1::Nivel1(QWidget *parent) :
 
 
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizar()));
-
-
-/*    painter->setBrush(Qt::darkYellow);        //asigna el color
-    painter->drawEllipse(boundingRect());    //dibuja una elipse encerrada en la boundingRect*/
-
-    //obstaculo1->setBrush(Qt::darkGreen);
-    //obstaculo1->drawRect(QRect());
-
-
     for(int i=0;i<bars.size();i++){
         bars.at(i)->actualizar(dt,v_limit);
     }
@@ -139,6 +121,7 @@ void Nivel1::actualizar(){
 
     if(contador==3000){
         timer->stop();
+        this->close();
     }
     if(Pressed==true){
         if(tiros<10){

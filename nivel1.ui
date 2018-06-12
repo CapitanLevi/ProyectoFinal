@@ -54,6 +54,19 @@ background-color: transparent
     </brush>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>40</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nivel 1</string>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="res.qrc"/>
