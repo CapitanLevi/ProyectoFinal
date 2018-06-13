@@ -90,6 +90,7 @@ Nivel1::Nivel1(QWidget *parent) :
 
 
     connect(timer,SIGNAL(timeout()),this,SLOT(actualizar()));
+    // Actualiza la posición
     for(int i=0;i<bars.size();i++){
         bars.at(i)->actualizar(dt,v_limit);
     }
@@ -178,6 +179,7 @@ void Nivel1::actualizar(){
 
 void Nivel1::bordercollision(EsferaSim *b)
 {
+    // Calcula la colisión con los obstáculos y los bordes del scene
     if(b->getX()<b->getR() || b->getX()>h_limit-b->getR()){
         b->setVel(-e*b->getVx(),b->getVy());
     }
@@ -189,6 +191,7 @@ void Nivel1::bordercollision(EsferaSim *b)
 
 void Nivel1::keyPressEvent(QKeyEvent *event)
 {
+    // Activado cuando se presiona Espacio
     if(event->key() == Qt::Key_Space /*&& bandera==0*/)
        {
            Pressed=true;
@@ -200,6 +203,7 @@ void Nivel1::keyPressEvent(QKeyEvent *event)
 
 void Nivel1::keyReleaseEvent(QKeyEvent *event)
 {
+    // Se desactiva la tecla espacio
     if(event->key() == Qt::Key_Space)
        {
            Pressed=false;
