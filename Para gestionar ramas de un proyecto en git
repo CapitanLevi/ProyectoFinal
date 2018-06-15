@@ -1,0 +1,12 @@
+Cómo crear un proyecto a punta de ramas en git
+
+1. Crear un repositorio.
+2. Clonar el repositorio.
+3. Ir al repositorio.
+4. Miro en qué rama estoy (con git branch)
+5. Creo una nueva rama y me cambio a esa rama con git checkout -B clase-enrutadores (este es el nombre de la rama)
+6. Miro en qué rama estoy (con git branch)
+7. En la rama nueva puedo hacer nuevas cosas (como crear un nuevo Non Qt Proyect - Plain C++) Lo hago en la carpeta del proyecto
+8. git add --all
+9. git commit -m "mensaje"
+10. git push origin clase-enrutadores (nombre de la rama)
